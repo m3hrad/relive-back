@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
-var fakeCurrentCommunityJson = {'name': 'Elixia Kamppi', 'address': 'Fredrikinkatu 48, 00100 Helsinki',
-'members': [1,2,3], 'rate': 13};
+var fakeCurrentCommunityJson = {'id': 0, 'name': 'Elixia Kamppi', 'address': 'Fredrikinkatu 48, 00100 Helsinki',
+'members': [1,2,3], 'rate': 13, 'img_url':'https://s3.eu-central-1.amazonaws.com/relivee/elixia_kamppi.jpg'};
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
