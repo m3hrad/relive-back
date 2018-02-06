@@ -8,27 +8,27 @@ var fakeCurrentCommunityJson = {'id': 0, 'name': 'Elixia Kamppi', 'address': 'Fr
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
         'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-        'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+        'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
-            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
+            'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'},
         {'id': 0, 'name': 'Mehrad' , 'communityRate': 90, 'totalRate': 80, 'interactionsWithUser' : 1,
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/0.jpg'},
         {'id': 1, 'name': 'Barack' , 'communityRate': 100, 'totalRate': 100, 'interactionsWithUser' : 0,
