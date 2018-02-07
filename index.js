@@ -45,5 +45,6 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/communities/current', (req, res) => res.json(fakeCurrentCommunityJson))
-  .get('/questions/:userId', (req, res) => res.json(fakeQuestion(req.params.userId)))
+  .get('/user/:id/question', (req, res) => res.json(fakeQuestion(req.params.id)))
+  .post('/user/:id/question', (req, res) => res.sendStatus(200))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
