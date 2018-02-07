@@ -35,7 +35,8 @@ const fakeCurrentCommunityJson = {'id': 0, 'name': 'Elixia Kamppi', 'address': '
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
         ]};
 
-function fakeQuestion(userId) {return {'id': 0, 'text': "What movie he has watched last?", "userImageUrl":
+function fakeQuestion(userId) {return {'id': 0, 'firstName': 'Obama', 'userId':userId,
+    'text': "What movie he has watched last?", "userImageUrl":
         'https://s3.eu-central-1.amazonaws.com/relivee/profile/'+userId+'.jpg'}}
 
 express()
