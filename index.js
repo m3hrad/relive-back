@@ -68,6 +68,7 @@ express()
   .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback))
   .post('/user/:id/interactions/:interactionId', (req, res) => res.sendStatus(200))
   .get('/user/:id', (req, res) => res.json(fakeUser))
+  .put('/user/:id', (req, res) => res.sendStatus(200))
   .post('/user/:id/report', (req, res) => res.sendStatus(200))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
