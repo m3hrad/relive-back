@@ -35,6 +35,13 @@ const fakeCurrentCommunityJson = {'id': 0, 'name': 'Elixia Kamppi', 'address': '
             'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'}
         ]};
 
+const fakeCommunitySearchResultJson = {
+    'communities': [ {'id': 0, 'name': 'Elixia Kamppi', 'address': 'Fredrikinkatu 48, 00100 Helsinki',
+    'rate': 13, 'img_url':'https://s3.eu-central-1.amazonaws.com/relivee/elixia_kamppi.jpg'},
+    {'id': 1, 'name': 'Forever Töölö', 'address': 'Mannerheimintie 50, 00260 Helsinki',
+    'rate': 15, 'img_url':'https://s3.eu-central-1.amazonaws.com/relivee/forever_toolo.jpg'}]
+};
+
 function fakeQuestion(userId) {return {'id': 0, 'firstName': 'Obama', 'askerId':'0', 'askedId':'1',
     'text': "What movie he has watched last?", "userImageUrl":
         'https://s3.eu-central-1.amazonaws.com/relivee/profile/'+userId+'.jpg'}}
@@ -54,6 +61,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/communities/current', (req, res) => res.json(fakeCurrentCommunityJson))
+  .get('/communities', (req, res) => res.json(fakeCommunitySearchResultJson))        //search community
   .get('/user/:id/question', (req, res) => res.json(fakeQuestion(req.params.id)))
   .post('/user/:id/question', (req, res) => res.sendStatus(200))
   .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback))
