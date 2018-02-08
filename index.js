@@ -39,10 +39,10 @@ function fakeQuestion(userId) {return {'id': 0, 'firstName': 'Obama', 'askerId':
     'text': "What movie he has watched last?", "userImageUrl":
         'https://s3.eu-central-1.amazonaws.com/relivee/profile/'+userId+'.jpg'}}
 
-const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1, 'communityId': 0,
+const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1, 'askedName': 'Barack', 'communityId': 0,
     'communityName': 'Elixia Kamppi', 'date': '10/01/2018 6 PM',
     'askedImageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0,
-    'questionText': 'What movie he has watched last?'};
+    'questionText': 'What movie he has watched last?', 'questionCategory': 'movies'};
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
