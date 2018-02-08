@@ -52,7 +52,8 @@ const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1,
     'questionText': 'What movie he has watched last?', 'questionCategory': 'movies'};
 
 const fakeUser = {'id': 0, 'firstName': 'Barack', 'lastName': 'Obama',
-    'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0
+    'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0, 'level': 3,
+    'rankInCity': '10', 'cityId':'0', 'cityName':'Helsinki'
 };
 
 express()
