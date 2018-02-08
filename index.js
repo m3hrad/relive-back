@@ -51,9 +51,10 @@ const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1,
     'askedImageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0,
     'questionText': 'What movie he has watched last?', 'questionCategory': 'movies'};
 
-const fakeUser = {'id': 0, 'firstName': 'Barack', 'lastName': 'Obama',
+const fakeUser = {'id': 0, 'firstName': 'Barack', 'lastName': 'Obama', 'rankInCity': '10', 'cityId':'0', 'visible': true,
     'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0, 'level': 3,
-    'rankInCity': '10', 'cityId':'0', 'cityName':'Helsinki', 'visible': true, 'languages':['Farsi, English']
+    'cityName':'Helsinki',
+    'languages':[{'id': 0, 'name':'English'},{'id': 1, 'name':'Farsi'}]
 };
 
 express()
