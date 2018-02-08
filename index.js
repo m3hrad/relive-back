@@ -52,7 +52,7 @@ express()
   .get('/communities/current', (req, res) => res.json(fakeCurrentCommunityJson))
   .get('/user/:id/question', (req, res) => res.json(fakeQuestion(req.params.id)))
   .post('/user/:id/question', (req, res) => res.sendStatus(200))
-  .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback)
+  .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback))
   .post('/user/:id/interactions/:interactionId', (req, res) => res.sendStatus(200))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
