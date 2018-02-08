@@ -39,6 +39,9 @@ function fakeQuestion(userId) {return {'id': 0, 'firstName': 'Obama', 'askerId':
     'text': "What movie he has watched last?", "userImageUrl":
         'https://s3.eu-central-1.amazonaws.com/relivee/profile/'+userId+'.jpg'}}
 
+const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1, 'communityId': 0,
+    'communityName': 'Elixia Kamppi', 'date': '10/01/2018 6 PM'};
+
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
@@ -47,4 +50,7 @@ express()
   .get('/communities/current', (req, res) => res.json(fakeCurrentCommunityJson))
   .get('/user/:id/question', (req, res) => res.json(fakeQuestion(req.params.id)))
   .post('/user/:id/question', (req, res) => res.sendStatus(200))
+  .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback)
+  .post('/user/:id/interactions/:interactionId', (req, res) => res.sendStatus(200))
+
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
