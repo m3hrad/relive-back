@@ -44,6 +44,10 @@ const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1,
     'askedImageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0,
     'questionText': 'What movie he has watched last?', 'questionCategory': 'movies'};
 
+const fakeUser = {'id': 0, 'firstName': 'Barack', 'lastName': 'Obama',
+    'imageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg', 'questionId': 0
+};
+
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
@@ -54,5 +58,7 @@ express()
   .post('/user/:id/question', (req, res) => res.sendStatus(200))
   .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback))
   .post('/user/:id/interactions/:interactionId', (req, res) => res.sendStatus(200))
+  .get('/user/:id', (req, res) => res.json(fakeUser))
+  .post('/user/:id/report', (req, res) => res.sendStatus(200))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
