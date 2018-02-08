@@ -40,7 +40,8 @@ function fakeQuestion(userId) {return {'id': 0, 'firstName': 'Obama', 'askerId':
         'https://s3.eu-central-1.amazonaws.com/relivee/profile/'+userId+'.jpg'}}
 
 const fakeInteractionFeedback = {'interactionId': 0, 'askerId': 0, 'askedId': 1, 'communityId': 0,
-    'communityName': 'Elixia Kamppi', 'date': '10/01/2018 6 PM'};
+    'communityName': 'Elixia Kamppi', 'date': '10/01/2018 6 PM',
+    'askedImageUrl': 'https://s3.eu-central-1.amazonaws.com/relivee/profile/1.jpg'};
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
