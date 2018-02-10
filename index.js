@@ -66,6 +66,7 @@ express()
   .get('/communities', (req, res) => res.json(fakeCommunitySearchResultJson))        //search community
   .get('/user/:id/question', (req, res) => res.json(fakeQuestion(req.params.id)))
   .post('/user/:id/question', (req, res) => res.sendStatus(200))
+  .get('/user/:id/communities', (req, res) => res.json(fakeCommunitySearchResultJson))
   .get('/user/:id/interactions/:interactionId/feedback', (req, res) => res.json(fakeInteractionFeedback))
   .post('/user/:id/interactions/:interactionId', (req, res) => res.sendStatus(200))
   .get('/user/:id', (req, res) => res.json(fakeUser))
